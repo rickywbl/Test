@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="RSTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="103.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3K-VK-SgZ">
+                        <rect key="frame" x="10" y="10" width="210" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="home_独家特供" translatesAutoresizingMaskIntoConstraints="NO" id="KnG-Eo-Lfa">
+                        <rect key="frame" x="10" y="40.5" width="47" height="47"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="KnG-Eo-Lfa" secondAttribute="bottom" constant="15" id="0xs-Qn-juK"/>
+                    <constraint firstItem="L3K-VK-SgZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="6Qd-SY-sAC"/>
+                    <constraint firstItem="KnG-Eo-Lfa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="9bY-eA-Cso"/>
+                    <constraint firstItem="L3K-VK-SgZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="AxK-2w-Xbj"/>
+                    <constraint firstItem="KnG-Eo-Lfa" firstAttribute="top" secondItem="L3K-VK-SgZ" secondAttribute="bottom" constant="10" id="PtP-Hy-elx"/>
+                    <constraint firstAttribute="trailing" secondItem="L3K-VK-SgZ" secondAttribute="trailing" constant="100" id="yIf-Gv-EfV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image" destination="KnG-Eo-Lfa" id="bPX-iP-KUb"/>
+                <outlet property="title" destination="L3K-VK-SgZ" id="QE6-y0-6uy"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="82"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home_独家特供" width="47" height="47"/>
+    </resources>
+</document>
